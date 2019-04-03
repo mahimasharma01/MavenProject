@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Suite]">
+  <test thread-count="5" name="Login Test(failed)">
+    <classes>
+      <class name="testnglearning.functional.TestCase1">
+        <methods>
+          <include name="doUserReg"/>
+          <include name="closeBrowser"/>
+          <include name="createDBConnection"/>
+          <include name="launchBrowser"/>
+          <include name="closeDBConn"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- testnglearning.functional.TestCase1 -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test thread-count="5" name="Validate Title Test(failed)">
+    <classes>
+      <class name="testnglearning.functional.TestCase2">
+        <methods>
+          <include name="validateTitles"/>
+        </methods>
+      </class> <!-- testnglearning.functional.TestCase2 -->
+    </classes>
+  </test> <!-- Validate Title Test(failed) -->
+  <test thread-count="5" name="Dependency Test(failed)">
+    <groups>
+      <run>
+        <exclude name="bvt"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testnglearning.functional.TestCase3">
+        <methods>
+          <include name="doUserReg"/>
+        </methods>
+      </class> <!-- testnglearning.functional.TestCase3 -->
+    </classes>
+  </test> <!-- Dependency Test(failed) -->
+</suite> <!-- Failed suite [TestNG Suite] -->

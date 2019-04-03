@@ -1,0 +1,2 @@
+INFO    2019-01-20 10:19:05,213 [main] testcases.TestProperties  - OR Properties file loaded !!!
+INFO    2019-01-20 10:19:05,215 [main] testcases.TestProperties  - Config properties file loaded
